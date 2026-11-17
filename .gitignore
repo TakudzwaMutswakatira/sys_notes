@@ -11,6 +11,30 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 
+# CMake & Qt Creator Build folders
+build/
+build-*/
+*.user
+CMakeLists.txt.user
+
+# Compiled Object files
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+
+# Qt Auto-Generated Files (MOC, UI, RCC)
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Makefile*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
 # CLion
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore

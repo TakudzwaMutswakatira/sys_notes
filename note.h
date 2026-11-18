@@ -9,7 +9,7 @@ class Note
 {
 public:
     Note();
-    Note(const QString& noteContent,const QStringList& tags = QStringList(), const QString& status = "" );
+    Note(const QString& noteContent,const QStringList& tags = QStringList(), const QString& status = "#new" );
 
     QString getNote() const;
     QStringList getTags() const;

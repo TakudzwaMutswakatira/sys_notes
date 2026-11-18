@@ -25,6 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         commandparser.h commandparser.cpp
         note.h note.cpp
         dbmanager.h dbmanager.cpp
+        titlebar.h titlebar.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET sys_notes APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -69,4 +70,8 @@ install(TARGETS sys_notes
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(sys_notes)
+endif()
+
+if(WIN32)
+    target_link_libraries(sys_notes PRIVATE dwmapi)
 endif()

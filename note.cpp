@@ -5,7 +5,8 @@ Note::Note() : timeStamp(QDateTime::currentDateTime()) {}
 Note::Note(const QString& noteContent,const QStringList& tags, const QString& status)
     : noteContent(noteContent),
     tags(tags),
-    status(status){ }
+    status(status),
+    timeStamp(QDateTime::currentDateTime()){ }
 
 QString Note::getNote() const
 {
